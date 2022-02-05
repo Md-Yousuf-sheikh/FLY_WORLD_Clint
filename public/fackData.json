@@ -1,0 +1,38 @@
+[
+    {
+        "id": "1",
+        "name": "The Colosseum ",
+        "Location": "Rome",
+        "price": "5000",
+        "day": "5",
+        "night": "4",
+        "people": "5",
+        "time": "6",
+        "img": "https://i.ibb.co/DQPTkjR/01.jpg",
+        "info": "The most famous and largest structure still standing from the Roman Empire, the Colosseum is also the biggest attraction of modern-day Rome. It's been a bucket-list destination of travelers for generations. And it does not disappoint.Set in the heart of the city, the Colosseum is an easy place to visit. Direct flights from around the world land in Rome daily, making it a destination you can visit in a weekend if you choose. Wander through Rome's ancient streets, tour the colosseum, and if time allows, plan a trip to other areas of Italy."
+    },
+    {
+        "id": "2",
+        "name": "Statue of Liberty  ",
+        "Location": "New York City",
+        "price": "4000",
+        "day": "5",
+        "night": "4",
+        "time": "6",
+        "people": "5",
+        "img": "   https://i.ibb.co/fx7s6wy/02.jpg",
+        "info": "America is full of great sights and places to visit, but it's the Statue of Liberty that represents the United States like no other place. This symbol of freedom in New York City was gifted by the French to the American people in 1896.Of all the attractions in New York City, this is one every tourist must see. The best thing to do at the Statue of Liberty is to take a ride up to her crown and soak up the view over the city. Access to the statue is via ferry, also a highlight of a visit."
+    },
+    {
+        "id": "3",
+        "name": "Machu Picchu  ",
+        "Location": " Peru",
+        "price": "5000",
+        "day": "5",
+        "night": "4",
+        "people": "5",
+        "time": "6",
+        "img": "https://i.ibb.co/fx7s6wy/02.jpg",
+        "info": "If you are planning to see only one attraction in South America, this is the place to come. The ancient Inca city of Machu Picchu is arguably the most impressive ruined city in the world.Much of the attraction comes from its location, high in the jungle-clad mountains of Peru. Set on a high plateau with soaring green mountains, the setting is surreal. The sheer tenacity of the original builders to create this amazing place in what would have been impenetrable jungle, is, in itself, impressive.Visitor numbers are now limited to a maximum per day, so the experience has been greatly enhanced."
+    }
+]
