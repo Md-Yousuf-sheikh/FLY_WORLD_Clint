@@ -1,8 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Headers from '../../../Shared/Header/Header/Header';
 import Footer from '../../Footer/Footer/Footer';
+import Destinations from '../Destinations/Destinations';
 
 const Destination = () => {
+    const [items, setItems] = useState([])
+    useEffect(() => {
+        fetch('https://vast-cove-03076.herokuapp.com/orders')
+            .then(res => res.json())
+            .then(data => setItems(data))
+    }, [])
+    console.log(items);
     return (
         <div>
             <Headers />
@@ -15,11 +23,10 @@ const Destination = () => {
                     <p className='text-red-400 font-semibold font-sans text-left'>TOP DESTINATION</p>
                     <h1 className='text-4xl font-bold text-left py-5'>Explore Top Destination</h1>
                     <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 '>
-
+                        {
+                            items.map(item => <Destinations key={item} item={item} />)
+                        }
                     </div>
-                    <button className='bg-red-500   rounded-full px-5 py-3 text-white font-semibold my-8'>
-                        Explore More
-                    </button>
                 </div>
             </div>
             <Footer />

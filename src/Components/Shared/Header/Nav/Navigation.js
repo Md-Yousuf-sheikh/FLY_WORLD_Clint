@@ -13,7 +13,7 @@ const Navigation = () => {
                 <div>
                     <div className="relative">
                         {/* For md screen size */}
-                        <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"} bg-white dark:bg-gray-900 lg:hidden py-5 px-6 items-center justify-between`}>
+                        <div id="md-searchbar" className={`${mdOptionsToggle ? "hidden" : "flex"}  bg-white dark:bg-gray-900 lg:hidden py-5 px-6 items-center justify-between`}>
                             <div className="flex items-center space-x-3 text-gray-800 dark:text-white">
                                 <div className=''>
                                     <svg className="fill-stroke" width={20} height={20} viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,10 +46,10 @@ const Navigation = () => {
                         </div>
                         {/* For md screen size */}
                         {/* For large screens */}
-                        <div className="dark:bg-gray-900 bg-gray-50 px-6 py-9">
+                        <div className="dark:bg-gray-900 bg-gray-50 px-6 py-4">
                             <div className="container mx-auto flex items-center justify-between">
                                 <h1 className="md:w-2/12 w-4/12 cursor-pointer text-gray-800 dark:text-white" aria-label="the Crib.">
-                                    <img className='h-6' src="https://i.ibb.co/HxyNh97/logi-fly-whait.png" alt="" />
+                                    <img className='w-8/12' src="https://i.ibb.co/HxyNh97/logi-fly-whait.png" alt="logo" />
                                 </h1>
                                 <ul className="hidden w-8/12 md:flex items-center justify-center space-x-8">
                                     <li>
@@ -58,7 +58,7 @@ const Navigation = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link to="/" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline" >
+                                        <Link to="/travelList" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline" >
                                             Tour List
                                         </Link>
                                     </li>
@@ -75,6 +75,11 @@ const Navigation = () => {
                                     <li>
                                         <Link to="/contactUs" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline" >
                                             Contact us
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link to="/dashboard" className="dark:text-white text-base text-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-800 hover:underline" >
+                                            Dashboard
                                         </Link>
                                     </li>
                                 </ul>

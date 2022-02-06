@@ -126,7 +126,7 @@ const useFirebase = () => {
     // Save user data
     const saveUser = (email, displayName, method) => {
         const user = { email, displayName };
-        fetch('https://limitless-thicket-29802.herokuapp.com/users', {
+        fetch('https://vast-cove-03076.herokuapp.com/users', {
             method: method,
             headers: {
                 'content-type': 'application/json'
@@ -137,7 +137,7 @@ const useFirebase = () => {
     }
     // admin check
     useEffect(() => {
-        fetch(`https://limitless-thicket-29802.herokuapp.com/users/${user.email}`)
+        fetch(`https://vast-cove-03076.herokuapp.com/users/${user.email}`)
             .then(res => res.json())
             .then(data => setAdmin(data.admin))
 

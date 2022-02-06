@@ -6,7 +6,7 @@ const ContactUs = () => {
     return (
         <div>
             <Headers />
-            <div className='bg-gray-800 text-white py-5'>
+            <div className='bg-gray-800 text-white text-center py-5'>
                 <h1 className='text-4xl font-mono mb-3'>CONTACT US</h1>
                 <h1>Home / <span className='text-gray-300'>Contact Us</span></h1>
             </div>

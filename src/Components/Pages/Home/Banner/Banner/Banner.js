@@ -1,5 +1,6 @@
 import React from 'react';
 import { FcGlobe } from "react-icons/fc";
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -16,9 +17,9 @@ const Banner = () => {
                             <h1 className="text-4xl text-left sm:text-5xl lg:text-6xl font-semibold text-white sm:w-8/12">It's a Big World Out There, Go Explore</h1>
                             <p className="text-base text-left leading-normal  text-white mt-4 sm:mt-5 sm:w-5/12">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
-                            <button className="hidden text-left sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">Explore</button>
+                            <Link to="travelList" className="hidden text-left sm:flex bg-gray-800 py-4 px-8 text-base font-medium text-white mt-8 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">Explore</Link>
                         </div>
-                        <button className="absolute bottom-0 sm:hidden dark:bg-white dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">Explore</button>
+                        <Link to="travelList" className="absolute bottom-0 sm:hidden dark:bg-gray-900 dark:text-gray-800 bg-gray-800 py-4 text-base font-medium text-white mt-8 flex justify-center items-center w-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 hover:bg-gray-700">Explore</Link>
                     </div>
                 </div>
             </div>
