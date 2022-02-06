@@ -19,7 +19,7 @@ const BestPackages = () => {
                     <h1 className='text-4xl font-bold'>Best Tour Packages</h1>
                     <div className=" grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-y-12 lg:gap-x-8 sm:gap-y-10 sm:gap-x-6 gap-y-6 lg:mt-12 mt-10">
                         {
-                            items.map(item => <TopPlace key={item._id} item={item} />)
+                            items.slice(0, 6).map(item => <TopPlace key={item._id} item={item} />)
                         }
                     </div>
                     <div className=" flex justify-center items-center">
