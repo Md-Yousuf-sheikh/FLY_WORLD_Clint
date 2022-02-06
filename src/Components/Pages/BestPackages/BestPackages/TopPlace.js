@@ -23,9 +23,15 @@ const TopPlace = (props) => {
                             <p className='line-clamp-3 mt-2'>
                                 {info}
                             </p>
-                            <Link to={`/products/${_id}`} className='bg-red-500  text-white font-semibold shadow-xl px-5 py-3 rounded-full mt-5 hover:shadow-sm transition-shadow '>
-                                Book Now
-                            </Link>
+                            <div className='mx-auto mt-2 flex px-5 justify-between '>
+                                <span className='bg-green-400 flex items-center rounded-tr-xl rounded-bl-xl text-white font-semibold  px-5 py-3  mt-5 hover:shadow-sm transition-shadow '>
+                                    <span className='mr-2'>Price</span>
+                                    ${price}
+                                </span>
+                                <Link to={`/products/${_id}`} className='bg-red-500  text-white font-semibold shadow-xl px-5 py-3 rounded-full mt-5 hover:shadow-sm transition-shadow '>
+                                    Book Now
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </div>
