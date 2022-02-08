@@ -10,13 +10,13 @@ const Booking = () => {
     const [detail, setDetail] = useState({});
     const [address, setAddress] = useState()
     const [success, setSuccess] = useState(false)
-    // products 
+    // Bookings 
     useEffect(() => {
         fetch('https://vast-cove-03076.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setDetails(data))
     }, [])
-    //  products find id to details
+    //  Booking find id to details
     useEffect(() => {
         const foundDetails = details.find(detail => detail._id === id)
         setDetail(foundDetails)
@@ -55,7 +55,6 @@ const Booking = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data);
                 if (data.insertedId) {
                     setSuccess(true)
                 } else {
@@ -64,31 +63,23 @@ const Booking = () => {
             })
         document.getElementById("Bay-now").reset();
     }
+    if (success) {
+        setTimeout(() => {
+            setSuccess(false)
+        }, 5000);
+    }
+
     return (
         <div className="bg-gray-100 min-h-screen">
             <Headers />
             {
-                isLoading && <div className="flex mt-28 justify-center ">
-                    <div class="relative">
-                        <div class="w-10 h-10 border-red-500 border-4 rounded-full"></div>
-                        <div class="w-10 h-10 border-black border-t-2 animate-spin rounded-full absolute left-0 top-0"></div>
+                success && <div className="  fixed w-12/12  right-5 bottom-8 flex justify-center z-50">
+                    <div className="bg-indigo-200 px-6 py-3  rounded-md text-lg flex items-center">
+                        <svg viewBox="0 0 24 24" className="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3">
+                            <path fill="currentColor" d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"></path>
+                        </svg>
+                        <span className="text-green-800"> Booking success full ! </span>
                     </div>
-                </div>
-            }
-            {
-                success && <div
-                    className="bg-green-200 px-6 py-4  my-4 rounded-md text-lg flex items-center mx-auto w-3/4 xl:w-2/4"
-                >
-                    <svg
-                        viewBox="0 0 24 24"
-                        className="text-green-600 w-5 h-5 sm:w-5 sm:h-5 mr-3"
-                    >
-                        <path
-                            fill="currentColor"
-                            d="M12,0A12,12,0,1,0,24,12,12.014,12.014,0,0,0,12,0Zm6.927,8.2-6.845,9.289a1.011,1.011,0,0,1-1.43.188L5.764,13.769a1,1,0,1,1,1.25-1.562l4.076,3.261,6.227-8.451A1,1,0,1,1,18.927,8.2Z"
-                        ></path>
-                    </svg>
-                    <span className="text-green-800"> Your Order success fully! </span>
                 </div>
             }
             {!isLoading &&
@@ -184,11 +175,11 @@ const Booking = () => {
 
                                                 <div className="inline-flex items-end">
                                                     {
-                                                        !success && <button type="submit" className="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded">Order</button>
+                                                        !success && <button type="submit" className="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded">Submit</button>
                                                     }
                                                     {
                                                         success && <div>
-                                                            <Link to='/orders' className="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded">You Orders</Link>
+                                                            <Link to='/Destination' className="bg-blue-500 hover:bg-blue-700  text-white font-bold py-2 px-4 rounded">See Booking</Link>
                                                         </div>
                                                     }
 

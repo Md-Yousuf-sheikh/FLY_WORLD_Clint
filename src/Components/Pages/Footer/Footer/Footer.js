@@ -45,9 +45,9 @@ const Footer = () => {
                 </div>
             </div>
             {/* Footer Bt */}
-            <div className='bg-gray-900 py-2 '>
-                <div className='bg-gray-900 flex container mx-auto text-white justify-between'>
-                    <div className="flex items-center"><img className='h-4 mr-2' src="https://i.ibb.co/HxyNh97/logi-fly-whait.png" alt="" /> &copy;  2020 All Right Reserved</div> <p>Privacy Policy | Term & Conditions</p>
+            <div className='bg-gray-900 py-4 '>
+                <div className='bg-gray-900 flex container mx-auto text-white px-2 justify-between'>
+                    <div className="flex items-center"><img className=' mr-2 h-2' src="https://i.ibb.co/HxyNh97/logi-fly-whait.png" alt="" /> <span className='text-xs'>&copy;  2020 All Right Reserved</span> </div> <p className='text-xs'>Privacy Policy | Term & Conditions</p>
                 </div>
             </div>
         </div>

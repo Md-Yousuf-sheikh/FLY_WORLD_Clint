@@ -29,7 +29,7 @@ const AdminMake = () => {
         e.preventDefault();
     }
     return (
-        <div className="min-h-screen bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
+        <div className="min-h-screen mx-auto bg-gray-100 py-6 flex flex-col justify-center sm:py-12">
             {
                 success && <div
                     className="bg-green-200 px-6 mb-4 py-2 rounded-md text-md flex items-center mx-auto w-3/4 xl:w-2/4"
@@ -43,7 +43,7 @@ const AdminMake = () => {
                     <span className="text-green-800"> Make New Admin Successfully! </span>
                 </div>
             }
-            <div className="relative py-3 w-11/12 max-w-xl sm:mx-auto">
+            <div className="relative py-3 w-11/12 max-w-xl mx-auto">
                 <div className="relative p-8 bg-white shadow-sm sm:rounded-xl">
                     <form onSubmit={handelAdminSubmit} className="w-full">
                         <div className="mb-5 relative">

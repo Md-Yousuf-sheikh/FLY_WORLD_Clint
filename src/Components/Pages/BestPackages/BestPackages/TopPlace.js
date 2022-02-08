@@ -12,6 +12,9 @@ const TopPlace = (props) => {
                     <div>
                         <div className='relative'>
                             <img className='rounded-3xl rounded-bl-none transition-shadow hover:shadow-2xl  tr' src={image} alt={name} />
+                            <div className='absolute p-1 rounded-tr-xl rounded-bl-xl font-bold top-0 right-0 bg-red-500 text-white'>
+                                <h1>${price}</h1>
+                            </div>
                         </div>
                         <div className="py-8  rounded-b-md">
                             <span className="text-2xl font-bold">{name}</span>
@@ -24,11 +27,10 @@ const TopPlace = (props) => {
                                 {info}
                             </p>
                             <div className='mx-auto mt-2 flex px-5 justify-between '>
-                                <span className='bg-green-400 flex items-center rounded-tr-xl rounded-bl-xl text-white font-semibold  px-5 py-3  mt-5 hover:shadow-sm transition-shadow '>
-                                    <span className='mr-2'>Price</span>
-                                    ${price}
+                                <span className='bg-green-400 flex items-center  text-white font-semibold  px-5 py-3  mt-5 hover:shadow-sm transition-shadow '>
+                                    <span className='mr-2'>More Info</span>
                                 </span>
-                                <Link to={`/products/${_id}`} className='bg-red-500  text-white font-semibold shadow-xl px-5 py-3 rounded-full mt-5 hover:shadow-sm transition-shadow '>
+                                <Link to={`/products/${_id}`} className='bg-red-500  text-white font-semibold shadow-xl px-5 py-3  mt-5 hover:shadow-sm transition-shadow '>
                                     Book Now
                                 </Link>
                             </div>

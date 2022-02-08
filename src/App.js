@@ -27,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="home" element={<Home />} />
-        <Route path="Destination" element={<Destination />} />
+        <Route path="Destination" element={<PrivetRoute><Destination /></PrivetRoute>} />
         <Route path="BestPack" element={<BestPackages />} />
         <Route path="TourPackages" element={<TravelPerfection />} />
         <Route path="contactUs" element={<ContactUs />} />
@@ -36,7 +36,8 @@ function App() {
         <Route path="travelList" element={<TravelList />} />
         <Route path="products/:id" element={<PrivetRoute><Booking /></PrivetRoute>} />
         {/* Dashboard */}
-        <Route path="dashboard" element={<PrivetRoute>< Dashboard /></PrivetRoute>}>
+        <Route path="/Dashboard" element={<PrivetRoute>< Dashboard /></PrivetRoute>}>
+          <Route path='' element={<AdminRoute><DashboardMain /></AdminRoute>} />
           <Route path='dashboardMain' element={<AdminRoute><DashboardMain /></AdminRoute>} />
           <Route path='adminMake' element={<AdminRoute><AdminMake /></AdminRoute>} />
           <Route path='manageTour' element={<AdminRoute><ManageTours /></AdminRoute>} />

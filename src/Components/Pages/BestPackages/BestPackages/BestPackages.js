@@ -22,8 +22,8 @@ const BestPackages = () => {
                             items.slice(0, 6).map(item => <TopPlace key={item._id} item={item} />)
                         }
                     </div>
-                    <div className=" flex justify-center items-center">
-                        <Link to="travelList" className=" hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 py-5 md:px-16 md:w-auto w-full lg:mt-28 md:mt-12 mt-10 text-white font-medium text-base leading-4">More</Link>
+                    <div className="flex justify-center items-center">
+                        <Link to="travelList" className=" text-center hover:bg-gray-700 focus:ring-2 focus:ring-offset-2 focus:ring-gray-800 bg-gray-800 py-5 md:px-16 md:w-auto w-full lg:mt-28 md:mt-12 mt-10 text-white font-medium text-base leading-4">More</Link>
                     </div>
                 </div>
             </div>
