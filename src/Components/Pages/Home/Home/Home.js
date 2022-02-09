@@ -5,6 +5,7 @@ import Footer from '../../Footer/Footer/Footer';
 import TravelPerfection from '../../TravelPerfection/TravelPerfection/TravelPerfection';
 import Banner from '../Banner/Banner/Banner';
 import Testimonial from '../Testimonial/Testimonial';
+import TravelHighlight from '../TravelHighlight/TravelHighlight';
 
 const Home = () => {
     return (
@@ -13,6 +14,7 @@ const Home = () => {
             <Banner />
             <TravelPerfection />
             <BestPackages />
+            <TravelHighlight />
             <Testimonial />
             <Footer />
         </div>
